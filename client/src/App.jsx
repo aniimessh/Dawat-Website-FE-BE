@@ -4,7 +4,7 @@ import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <>
+    <div>
       <div className="bg-[#404040]">
         <SocialMediaBar />
       </div>
@@ -12,7 +12,7 @@ function App() {
       <div>
         <HomePage />
       </div>
-    </>
+    </div>
   );
 }
 
