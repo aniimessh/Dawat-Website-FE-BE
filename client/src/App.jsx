@@ -3,6 +3,7 @@ import Navbar from "./components/common/Navbar";
 import SocialMediaBar from "./components/common/SocialMediaBar";
 import HomePage from "./pages/HomePage";
 import MenuPage from "./pages/MenuPage";
+import Footer from "./components/common/Footer";
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/menu" element={<MenuPage />} />
         </Routes>
-        
       </div>
+      <Footer />
     </div>
   );
 }

@@ -3,6 +3,9 @@ import heroImage from "../assets/heroimage.jfif";
 import MenuSection from "../components/core/Homepage/MenuSection";
 import HomePageAbout from "../components/core/Homepage/HomePageAbout";
 import ServiceSection from "../components/core/Homepage/ServiceSection";
+import DeliveryImage from "../assets/delivery.jfif";
+import Zomato from "../assets/zomato.png"
+import Swiggy from "../assets/swiggy.png"
 
 const HomePage = () => {
   return (
@@ -39,6 +42,36 @@ const HomePage = () => {
       </section>
       <section>
         <ServiceSection />
+      </section>
+      <section className="w-10/12 m-auto my-20">
+        <div className="flex justify-between">
+          <div>
+            <img
+              src={DeliveryImage}
+              alt=""
+              className="h-[600px] rounded-lg object-contain"
+            />
+          </div>
+          <div className="flex-1 flex justify-center items-start flex-col max-w-max">
+            <p className="font-bold font-philospher text-6xl w-3/5 text-left">
+              Fastest Food delivery in the city.
+            </p>
+            <div className="w-8/12 text-left mt-5">
+              <p>
+                Delightful dishes delivered promptly to your doorstep for
+                effortless enjoyment anytime, anywhere.
+              </p>
+            </div>
+            <div className="flex gap-x-4 mt-10">
+            <button>
+              <img src={Zomato} alt="" className="h-[50px]" />
+            </button>
+            <button>
+              <img src={Swiggy} alt=""   className="h-[50px]"/>
+            </button>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );

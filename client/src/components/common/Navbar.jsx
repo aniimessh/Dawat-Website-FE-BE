@@ -16,8 +16,8 @@ const Navbar = () => {
                     to={item.link}
                     className={`${
                       location.pathname === item.link
-                        ? " bg-[#d9d9d9] rounded-lg "
-                        : ""
+                        ? "  opacity-100 rounded-lg "
+                        : "opacity-60"
                     } font-semibold p-1`}
                   >
                     {item.name}
