@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import heroImage from "../assets/heroimage.jfif";
+import MenuSection from "../components/core/Homepage/MenuSection";
+import HomePageAbout from "../components/core/Homepage/HomePageAbout";
 
 const HomePage = () => {
   return (
@@ -28,6 +30,12 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <div>
+        <MenuSection />
+      </div>
+      <section>
+        <HomePageAbout />
+      </section>
     </div>
   );
 };
