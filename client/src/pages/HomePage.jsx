@@ -13,7 +13,7 @@ const HomePage = () => {
           className="h-[700px] w-screen object-cover"
         />
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2">
-          <h1 className="text-white text-6xl w-3/5 text-center m-auto">
+          <h1 className="text-white text-6xl w-3/5 text-center m-auto font-philospher">
             Best Food For Your Taste
           </h1>
           <p className="text-white text-md text-center w-10/12 m-auto mt-4">

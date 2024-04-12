@@ -5,7 +5,7 @@ const MenuSection = () => {
   return (
     <div className="w-10/12 m-auto p-10">
       <div className="text-center ">
-        <h1 className="font-bold text-5xl">Browse Our Menu</h1>
+        <h1 className="font-bold text-5xl font-philospher">Browse Our Menu</h1>
       </div>
       <div className="flex justify-around gap-x-6 mt-10">
         {

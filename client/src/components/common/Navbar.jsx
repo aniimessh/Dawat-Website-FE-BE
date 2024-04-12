@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className="w-10/12 m-auto py-2">
       <div className="flex justify-between items-center">
-        <p className="font-bold italic text-2xl">Bistro Bliss</p>
+        <p className="font-bold text-2xl font-philospher">Dawat</p>
         <nav>
           <ul className="flex gap-x-6">
             {Navitems.map((item, index) => {
