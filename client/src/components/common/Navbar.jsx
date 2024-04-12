@@ -28,7 +28,7 @@ const Navbar = () => {
           </ul>
         </nav>
         <button className="border p-1 rounded-xl border-black">
-          Book a Table
+          <Link to="/book-a-table">Book a Table</Link>
         </button>
       </div>
     </div>

@@ -13,7 +13,7 @@ import Footer4 from "../../assets/footer4.jfif";
 
 const Footer = () => {
   return (
-    <div className="bg-[#474747]">
+    <div className="bg-[#474747] h-[40vh]">
       <div className="w-10/12 m-auto">
         <div className="py-5 flex justify-between items-center">
           <div className="flex flex-col items-center">
