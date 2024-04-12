@@ -1,4 +1,5 @@
 import HeroAboutImage from "../../../assets/homepage-about.jfif";
+import { Link } from "react-router-dom";
 
 const HomePageAbout = () => {
   return (
@@ -28,6 +29,9 @@ const HomePageAbout = () => {
               satisfied.
             </p>
           </div>
+          <button className="mt-5 border border-black rounded-lg text-gray-500 font-semibold px-5 py-4">
+            <Link to="/about-us">More About Us</Link>
+          </button>
         </div>
       </div>
     </div>
