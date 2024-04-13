@@ -1,6 +1,13 @@
 import { useForm } from "react-hook-form";
+import { sendOtp } from "../../../redux/slices/TableReservationSlices";
+import { useDispatch, useSelector } from "react-redux";
+import ConfirmationModal from "./ConfirmationModal";
+import { addBooking } from "../../../redux/slices/bookingSlice";
+import { toast } from "react-hot-toast";
 
 const ReservationForm = () => {
+  const dispatch = useDispatch();
+  const { success } = useSelector((state) => state.table);
   const {
     register,
     setValue,
@@ -8,8 +15,12 @@ const ReservationForm = () => {
     formState: { errors },
   } = useForm();
 
-  const formSubmit = (data) => {
-    console.log(data)
+  const formSubmit = async (data) => {
+    dispatch(addBooking(data));
+    const response = await dispatch(sendOtp(data.useremail));
+    if (response?.payload?.success) {
+      toast.success(response?.payload?.message);
+    }
   };
   return (
     <div className="m-auto mb-[6.5rem] mt-10">
@@ -28,7 +39,7 @@ const ReservationForm = () => {
               name=""
               id="date"
               className="border rounded-lg p-3 mt-1 w-full"
-              min={new Date().toISOString().split('T')[0]}
+              min={new Date().toISOString().split("T")[0]}
               {...register("bookingDate", { required: true })}
             />
             {errors.bookingDate && (
@@ -117,6 +128,11 @@ const ReservationForm = () => {
           </button>
         </div>
       </form>
+      {success && (
+        <div className="absolute left-1/2 top-0 -translate-x-52">
+          <ConfirmationModal />
+        </div>
+      )}
     </div>
   );
 };
