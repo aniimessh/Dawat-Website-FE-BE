@@ -82,3 +82,43 @@ export const ServiceCardDetails = [
       "Elevate your events with our tailored catering services, where every dish is crafted with care to make your occasions truly memorable.",
   },
 ];
+
+export const aboutPageDetails = [
+  {
+    icon: "MdOutlineNewspaper",
+    title: "Multi Cuisine",
+    subtitle:
+      "Embark on a global culinary journey with our multi-cuisine restaurant, where every dish is a passport to flavor.",
+  },
+  {
+    icon: "MdOutlineRestaurantMenu",
+    title: "Easy to Order",
+    subtitle:
+      "Ordering made effortless with our user-friendly platform, ensuring convenience at your fingertips.",
+  },
+  {
+    icon: "MdDirectionsRun",
+    title: "Fast delivery",
+    subtitle:
+      "Swift delivery guaranteed, bringing your favorite flavors to your doorstep in record time.",
+  },
+];
+
+export const moreAboutPageDetails = [
+  {
+    number: "4",
+    title: "Location",
+  },
+  {
+    number: "1998",
+    title: "Founded",
+  },
+  {
+    number: "40+",
+    title: "Staff Members",
+  },
+  {
+    number: "100%",
+    title: "Satisfied Customers",
+  },
+];
