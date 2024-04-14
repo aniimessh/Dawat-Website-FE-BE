@@ -16,10 +16,6 @@ export const Navitems = [
     link: "/menu",
   },
   {
-    name: "Pages",
-    link: "/pages",
-  },
-  {
     name: "Contact Us",
     link: "/contact-us",
   },
