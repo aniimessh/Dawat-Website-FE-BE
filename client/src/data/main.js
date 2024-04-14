@@ -118,3 +118,22 @@ export const moreAboutPageDetails = [
     title: "Satisfied Customers",
   },
 ];
+
+export const menuData = [
+  {
+    title: "Starters",
+    value: "starters",
+  },
+  {
+    title: "Main Course",
+    value: "main-course",
+  },
+  {
+    title: "Drinks",
+    value: "drinks",
+  },
+  {
+    title: "Dessert",
+    value: "dessert",
+  },
+]
