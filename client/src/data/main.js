@@ -2,6 +2,7 @@ import CateringImage from "../assets/catering.jfif";
 import WeddingImage from "../assets/wedding.jfif";
 import EventsImage from "../assets/events.jfif";
 import BirthdayImage from "../assets/birthdays.jfif";
+import DalTadka from "../assets/dal-image.jfif";
 export const Navitems = [
   {
     name: "Home",
@@ -136,4 +137,27 @@ export const menuData = [
     title: "Dessert",
     value: "dessert",
   },
-]
+];
+
+export const MenuCardItems = [
+  {
+    name: "Dal Tadka",
+    image: DalTadka,
+    price: "200"
+  },
+  {
+    name: "Dal Tadka",
+    image: DalTadka,
+    price: "200"
+  },
+  {
+    name: "Dal Tadka",
+    image: DalTadka,
+    price: "200"
+  },
+  {
+    name: "Dal Tadka",
+    image: DalTadka,
+    price: "200"
+  },
+];
