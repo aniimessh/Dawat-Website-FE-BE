@@ -122,20 +122,24 @@ export const moreAboutPageDetails = [
 
 export const menuData = [
   {
-    title: "Starters",
-    value: "starters",
+    id: "starter",
+    label: "Starters",
+    value: "Starter",
   },
   {
-    title: "Main Course",
-    value: "main-course",
+    id: "Main Course",
+    label: "Main Course",
+    value: "Main Course",
   },
   {
-    title: "Drinks",
-    value: "drinks",
+    id: "Drinks",
+    label: "Drinks",
+    value: "Drinks",
   },
   {
-    title: "Dessert",
-    value: "dessert",
+    id: "Dessert",
+    label: "Dessert",
+    value: "Dessert",
   },
 ];
 
