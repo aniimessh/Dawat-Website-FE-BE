@@ -1,13 +1,14 @@
-import { brunchItems } from "../../../data/main";
+import React from 'react'
+import { drinkOptions } from '../../../data/main'
 
-const BrunchItem = () => {
+const DrinksItem = () => {
   return (
     <table className="m-auto w-full my-[71.2px]">
       <tr className="text-left">
         <th>Name</th>
         <th>Price</th>
       </tr>
-      {brunchItems.map((item, index) => (
+      {drinkOptions.map((item, index) => (
         <tr className="">
           <>
             <td>{item.name}</td>
@@ -16,7 +17,7 @@ const BrunchItem = () => {
         </tr>
       ))}
     </table>
-  );
-};
+  )
+}
 
-export default BrunchItem;
+export default DrinksItem

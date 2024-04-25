@@ -2,6 +2,8 @@ import { useState } from "react";
 import { menuData } from "../data/main";
 import BrunchItem from "../components/core/MenuPage/BrunchItem";
 import StarterItem from "../components/core/MenuPage/StarterItem";
+import DrinksItem from "../components/core/MenuPage/DrinksItem";
+import DessertItems from "../components/core/MenuPage/DessertItems";
 
 const MenuPage = () => {
   const [selectedMenu, setSelectedMenu] = useState("Starter");
@@ -47,6 +49,8 @@ const MenuPage = () => {
         <div>
           {selectedMenu === "Starter" && <StarterItem />}
           {selectedMenu === "Main Course" && <BrunchItem />}
+          {selectedMenu === "Drinks" && <DrinksItem />}
+          {selectedMenu === "Dessert" && <DessertItems />}
         </div>
       </div>
     </div>

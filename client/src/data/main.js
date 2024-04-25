@@ -143,21 +143,38 @@ export const menuData = [
   },
 ];
 
-export const StarterItems = [
-  {
-    name: "Dal Tadka1",
-    price: "2001"
-  },
-  {
-    name: "Dal Tadka2",
-    price: "2002"
-  },
-  {
-    name: "Dal Tadka3",
-    price: "2003"
-  },
-  {
-    name: "Dal Tadka4",
-    price: "2004"
-  },
+export const starterFoods = [
+  { name: "Samosa", price: getRandomPrice() },
+  { name: "Pakora", price: getRandomPrice() },
+  { name: "Aloo Tikki", price: getRandomPrice() },
+  { name: "Paneer Tikka", price: getRandomPrice() },
+  { name: "Vegetable Cutlet", price: getRandomPrice() },
 ];
+
+export const drinkOptions = [
+  { name: "Masala Chai", price: getRandomPrice() },
+  { name: "Lassi", price: getRandomPrice() },
+  { name: "Mango Shake", price: getRandomPrice() },
+  { name: "Thandai", price: getRandomPrice() },
+  { name: "Nimbu Pani (Lemonade)", price: getRandomPrice() },
+];
+
+export const brunchItems = [
+  { name: "Masala Dosa", price: getRandomPrice() },
+  { name: "Idli Sambhar", price: getRandomPrice() },
+  { name: "Poha", price: getRandomPrice() },
+  { name: "Upma", price: getRandomPrice() },
+  { name: "Paratha with Curd", price: getRandomPrice() },
+];
+
+export const dessertOptions = [
+  { name: "Gulab Jamun", price: getRandomPrice() },
+  { name: "Rasgulla", price: getRandomPrice() },
+  { name: "Jalebi", price: getRandomPrice() },
+  { name: "Kheer", price: getRandomPrice() },
+  { name: "Rasmalai", price: getRandomPrice() },
+];
+
+function getRandomPrice() {
+  return Math.floor((Math.random() * 1000 + 5).toFixed(1));
+}
