@@ -50,7 +50,7 @@ const MenuPage = () => {
           {selectedMenu === "Starter" && <StarterItem />}
           {selectedMenu === "Main Course" && <BrunchItem />}
           {selectedMenu === "Drinks" && <DrinksItem />}
-          {selectedMenu === "Dessert" && <DessertItems />}
+          {selectedMenu === "Dessert" && <DessertItems/>}
         </div>
       </div>
     </div>
