@@ -19,7 +19,7 @@ const MenuPage = () => {
           tantalize your taste buds and satisfy your cravings."
         </p>
       </div>
-      <div className="w-1/3 m-auto ">
+      <div className="w-1/3 m-auto">
         <div className="flex justify-between">
           {menuData.map((item, index) => (
             <div>

@@ -143,25 +143,21 @@ export const menuData = [
   },
 ];
 
-export const MenuCardItems = [
+export const StarterItems = [
   {
-    name: "Dal Tadka",
-    image: DalTadka,
-    price: "200"
+    name: "Dal Tadka1",
+    price: "2001"
   },
   {
-    name: "Dal Tadka",
-    image: DalTadka,
-    price: "200"
+    name: "Dal Tadka2",
+    price: "2002"
   },
   {
-    name: "Dal Tadka",
-    image: DalTadka,
-    price: "200"
+    name: "Dal Tadka3",
+    price: "2003"
   },
   {
-    name: "Dal Tadka",
-    image: DalTadka,
-    price: "200"
+    name: "Dal Tadka4",
+    price: "2004"
   },
 ];
