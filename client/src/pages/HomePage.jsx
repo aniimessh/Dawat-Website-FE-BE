@@ -17,7 +17,7 @@ const HomePage = () => {
           className="h-[700px] w-screen object-cover"
         />
         <div className="absolute top-1/3 left-1/2 -translate-x-1/2">
-          <h1 className="text-white text-6xl w-3/5 text-center m-auto font-philospher">
+          <h1 className="text-white text-6xl md:w-3/5 w-screen text-center m-auto font-philospher">
             Best Food For Your Taste
           </h1>
           <p className="text-white text-md text-center w-10/12 m-auto mt-4">
@@ -44,7 +44,7 @@ const HomePage = () => {
         <ServiceSection />
       </section>
       <section className="w-10/12 m-auto my-20">
-        <div className="flex justify-between">
+        <div className="md:flex md:flex-row flex-col justify-between">
           <div>
             <img
               src={DeliveryImage}

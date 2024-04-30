@@ -7,7 +7,7 @@ const MenuSection = () => {
       <div className="text-center ">
         <h1 className="font-bold text-5xl font-philospher">Browse Our Menu</h1>
       </div>
-      <div className="flex justify-around gap-x-6 mt-10">
+      <div className="md:flex-row flex justify-around gap-x-6 mt-10 flex-col">
         {
             MenuItems.map((item, index) => {
                 return (

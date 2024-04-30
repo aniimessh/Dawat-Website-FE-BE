@@ -37,14 +37,14 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="flex gap-x-5">
+          <div className="flex md:flex-row flex-col gap-x-5">
             {Navitems.map((item, index) => (
               <Link to={item.link} key={index} className="text-white text-lg">
                 {item.name}
               </Link>
             ))}
           </div>
-          <div>
+          <div className="md:block hidden">
             <p className="text-white text-lg text-center">Follow us on instagram...</p>
             <div className="grid grid-cols-2 gap-4">
               <img src={Footer1} alt=""  className="h-[100px] aspect-video object-cover rounded-lg"/>

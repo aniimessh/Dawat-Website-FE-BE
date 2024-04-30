@@ -4,17 +4,17 @@ import { Link } from "react-router-dom";
 const HomePageAbout = () => {
   return (
     <div className="w-10/12 m-auto my-10">
-      <div className="flex justify-between">
+      <div className="md:flex-row md:flex flex-col justify-between">
         <img
           src={HeroAboutImage}
           alt=""
           className="h-[500px] rounded-lg object-cover"
         />
         <div className="flex-1 flex justify-center items-center flex-col max-w-max">
-          <p className="font-bold font-philospher text-6xl w-2/3 text-center">
+          <p className="font-bold font-philospher text-6xl md:w-2/3 w-full text-center">
             We provide healthy food for your family.
           </p>
-          <div className="w-8/12 text-center mt-5">
+          <div className="md:w-8/12 w-full text-center mt-5">
             <p>
               Embrace wellness without compromising on flavor at our restaurant,
               where fresh ingredients and mindful cooking unite in delicious,

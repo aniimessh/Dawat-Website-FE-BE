@@ -9,7 +9,7 @@ const ServiceSection = () => {
           We also offers unique services for your events
         </h1>
       </div>
-      <div className="flex justify-between mt-5 gap-x-6">
+      <div className="md:flex md:flex-row flex-col justify-between mt-5 gap-x-6">
         {ServiceCardDetails.map((item, index) => {
           return <ServiceCard item={item} key={index}/>;
         })}
