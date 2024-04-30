@@ -27,7 +27,7 @@ export const MenuItems = [
     icon: "MdCoffee",
     title: "Breakfast",
     subtitle:
-      "Morning bliss awaits with our delectable breakfast offerings, perfect for a flavorful start to your day.",
+      "Morning bliss awaits with our delectable breakfast offerings, flavorful start to your day.",
     linkto: "/breakfast-tab",
   },
   {
