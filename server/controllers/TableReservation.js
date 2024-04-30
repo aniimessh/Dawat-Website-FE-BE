@@ -97,8 +97,6 @@ exports.sendVerificationOTP = async (req, res) => {
 
     const otpBody = await OTP.create(otpPayload);
 
-    console.log(otpBody)
-
     res.status(200).json({
       success: true,
       message: `OTP Sent Successfully`,

@@ -1,11 +1,9 @@
 const nodemailer = require("nodemailer");
-require("dotenv").config();
 
 const mailSender = async (email, title, body) => {
   try {
-    transporter = nodemailer.createTransport({
+    let transporter = nodemailer.createTransport({
       host: process.env.MAIL_HOST,
-      port: "8000",
       auth: {
         user: process.env.MAIL_USER,
         pass: process.env.MAIL_PASS,
