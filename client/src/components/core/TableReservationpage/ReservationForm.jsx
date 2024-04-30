@@ -26,7 +26,7 @@ const ReservationForm = () => {
     <div className="m-auto mb-[6.5rem] mt-10">
       <form
         action=""
-        className="border w-1/2 m-auto p-10 rounded-lg"
+        className="border md:w-1/2 w-full m-auto p-5 rounded-lg"
         onSubmit={handleSubmit(formSubmit)}
       >
         <div className="flex justify-between gap-x-5">

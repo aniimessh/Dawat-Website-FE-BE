@@ -8,7 +8,7 @@ const TableReservationPage = () => {
         <h1 className="font-philospher font-bold text-5xl text-center">
           Book A Table
         </h1>
-        <p className="text-center w-1/2 m-auto">
+        <p className="text-center md:w-1/2 w-full m-auto">
           "Reserve your spot at our restaurant effortlessly. Book a table now
           for an unforgettable dining experience."
         </p>
