@@ -6,7 +6,7 @@ import AboutCard from "../components/core/Aboutpage/AboutCard";
 const AboutPage = () => {
   return (
     <div className="mt-10">
-      <div className="flex w-10/12 m-auto gap-x-5">
+      <div className="flex md:flex-row flex-col w-10/12 m-auto gap-x-5">
         <div className="">
           <img
             src={AboutImage}
@@ -15,15 +15,15 @@ const AboutPage = () => {
           />
         </div>
         <div className="flex flex-col justify-center items-center flex-1">
-          <p className="font-philospher font-bold text-6xl w-2/3 text-center">
+          <p className="font-philospher font-bold text-6xl md:w-2/3 w-full text-center">
             We provide healthy food for your family.
           </p>
-          <p className="mt-5 w-1/2 text-center">
+          <p className="mt-5 md:w-1/2 w-full text-center">
             Embrace wellness without compromising on flavor at our restaurant,
             where fresh ingredients and mindful cooking unite in delicious,
             nutritious dishes.
           </p>
-          <p className="mt-4 w-1/2 text-center">
+          <p className="mt-4 md:w-1/2 w-full text-center">
             Indulge in a culinary journey where every bite delights the senses
             and nourishes the body, leaving you feeling energized and satisfied.
           </p>
@@ -37,7 +37,7 @@ const AboutPage = () => {
         />
       </div>
       <div className="w-10/12 m-auto my-10">
-        <div className="flex justify-between w-4/5 m-auto gap-x-6">
+        <div className="flex md:flex-row flex-col gap-6 justify-between w-4/5 m-auto gap-x-6">
           {aboutPageDetails.map((item, index) => {
             return <AboutCard item={item} iconName={item.icon} />;
           })}
@@ -47,7 +47,7 @@ const AboutPage = () => {
         <p className="font-philospher text-6xl font-bold text-center">
           More About Us
         </p>
-        <div className="flex justify-between">
+        <div className="flex md:flex-row flex-col items-center justify-between">
           {moreAboutPageDetails.map((item, index) => {
             return (
               <div className="rounded-lg bg-gray-300 p-5 mt-5 text-center">
